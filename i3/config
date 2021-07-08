@@ -246,3 +246,6 @@ client.placeholder $fg $fg $fg $fg $fg
 
 # polybar launch script
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# Launch picom at startup
+exec_always picom --experimental -backends
