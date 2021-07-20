@@ -57,7 +57,7 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm i3 
 modules-center = mpd
-modules-right = backlight pulseaudio  wlan eth battery date powermenu
+modules-right = pulseaudio-microphone backlight pulseaudio  wlan eth battery date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -475,31 +475,12 @@ margin-bottom = 5
 
 ; vim:ft=dosini
 
-[module/spotify]
+
+[module/pulseaudio-microphone]
 type = custom/script
+exec = ~/.config/polybar/scripts/pulseaudio-microphone.sh
 tail = true
-; prefix symbol is shown before the text
-format-prefix = ""
-format = <label>
-exec = ~/.config/polybar/scripts/scroll_spotify_status.sh
-
-[module/spotify-prev]
-type = custom/script
-exec = echo ""
-format = <label>
-click-left = playerctl previous spotify
-
-[module/spotify-play-pause]
-type = custom/ipc
-hook-0 = echo "<playing-symbol>"
-hook-1 = echo "<pause-symbol>"
-initial = 1
-click-left = playerctl play-pause spotify
-
-[module/spotify-next]
-type = custom/script
-exec = echo "next-song-symbol"
-format = <label>
-click-left = playerctl next spotify
-
+click-left = ~/.config/polybar/scripts/pulseaudio-microphone.sh --toggle &
+scroll-up = ~/.config/polybar/scripts/pulseaudio-microphone.sh --increase &
+scroll-down = ~/.config/polybar/scripts/pulseaudio-microphone.sh --decrease &
 
