@@ -64,7 +64,7 @@ font-2 = "FontAwesome:style=Regular:size=11;4"
 
 modules-left = i3 
 modules-center = date
-modules-right = pulseaudio-microphone backlight pulseaudio  wlan eth battery
+modules-right = pulseaudio-microphone brightness pulseaudio  wlan eth battery
 
 tray-position = right 
 tray-padding = 0
@@ -155,7 +155,8 @@ icon-next = 
 label-song-maxlen = 25
 label-song-ellipsis = true
 
-[module/backlight]
+[module/brightness]
+inherit = module/xbacklight
 type = internal/backlight
 
 ; Use the following command to list available cards:
@@ -166,7 +167,7 @@ card = intel_backlight
 ; Use the `/sys/class/backlight/actual-brightness` file
 ; rather than the regular `brightness` file.
 ; Defaults to true unless the specified card is an amdgpu backlight.
-use-actual-brightness = true
+;use-actual-brightness = true
 
 ; Enable changing the backlight with the scroll wheel
 ; NOTE: This may require additional configuration on some systems. Polybar will
@@ -180,43 +181,26 @@ use-actual-brightness = true
 ; Default: false
 enable-scroll = true
 
-format = <ramp> <label> <bar>
-ramp-0 = 🌕
-ramp-1 = 🌔
-ramp-2 = 🌓
-ramp-3 = 🌒
-ramp-4 = 🌑
+format = <label>
+format-foreground = ${colors.grad-5}
+format-padding = 2
+format-prefix = " "
+format-font = 2
 
-label = %percentage%%
+label = " %percentage%% "
 
-bar-width = 10
-bar-indicator = |
-bar-indicator-foreground = #fff
-bar-indicator-font = 2
-bar-fill = ─
-bar-fill-font = 2
-bar-fill-foreground = #9f78e1
-bar-empty = ─
-bar-empty-font = 2
-bar-empty-foreground = ${colors.foreground-alt}
+; Only applies if <ramp> is used
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-3 = 
+ramp-4 = 
 
 [module/xbacklight]
 type = internal/xbacklight
 enable-scroll = true
 
-format = <label> <bar>
-label = %percentage%%
 
-bar-width = 10
-bar-indicator = |
-bar-indicator-foreground = #fff
-bar-indicator-font = 2
-bar-fill = ─
-bar-fill-font = 2
-bar-fill-foreground = #9f78e1
-bar-empty = ─
-bar-empty-font = 2
-bar-empty-foreground = ${colors.foreground-alt}
 
 [module/backlight-acpi]
 inherit = module/xbacklight
@@ -302,6 +286,8 @@ format-muted-font = 2
 
 label-muted = " Muted "
 label-muted-foreground = ${colors.grad-4}
+
+
 
 [module/battery]
 type = internal/battery
