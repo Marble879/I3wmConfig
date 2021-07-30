@@ -26,7 +26,11 @@ foreground-alt = #555
 primary = #2affd8
 secondary = #e60053
 alert = #bd2c40
-
+white = #FFFFFF
+silver = #c0c0c0
+gray = #808080
+silvergray = #C1B7B0
+darkgray = #838383
 ; Nord colourful
 
 grad-1 = #bfc3cb
@@ -432,4 +436,12 @@ tail = true
 click-left = ~/.config/polybar/scripts/pulseaudio-microphone.sh --toggle &
 scroll-up = ~/.config/polybar/scripts/pulseaudio-microphone.sh --increase &
 scroll-down = ~/.config/polybar/scripts/pulseaudio-microphone.sh --decrease &
+
+
+format-prefix = " "
+format-foreground = ${colors.grad-6}
+
+ 
+  
+
 
