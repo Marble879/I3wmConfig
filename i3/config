@@ -202,7 +202,8 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Set wallpaper at startup
-exec_always feh --bg-scale /home/younis/Pictures/wallpaper.png
+#exec_always feh --bg-scale /home/younis/Pictures/wallpaper.png
+exec_always feh --bg-scale /home/younis/Pictures/49276.jpg
 
 # Set up dual monitors at startup (Austria)
 exec_always xrandr --output eDP-1 --primary --mode 1920x1080 --pos 1366x0 --rotate normal --output DP-1 --off --output HDMI-1 --off --output HDMI-2 --mode 1366x768 --pos 0x156 --rotate normal
