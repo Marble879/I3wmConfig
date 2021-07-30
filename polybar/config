@@ -27,6 +27,16 @@ primary = #2affd8
 secondary = #e60053
 alert = #bd2c40
 
+; Nord colourful
+
+grad-1 = #bfc3cb
+grad-2 = #BF616A
+grad-3 = #D08770
+grad-4 = #EBCB8B
+grad-5 = #A3BE8C
+grad-6 = #B48EAD
+grad-7 = #4C566A
+
 [bar/main]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
@@ -271,17 +281,15 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-date = %d-%m-%Y
-;date-alt = "%Y-%m-%d"
+date =   %b %d
 
 time = %H:%M
 time-alt = %H:%M
 
-format-prefix = 
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #0a6cf5
-
+format = <label>
+format-padding = 3
 label = %date% %time%
+format-foreground = ${colors.grad-4}
 
 [module/pulseaudio]
 type = internal/pulseaudio
