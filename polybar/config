@@ -379,7 +379,7 @@ time-format = %H:%M
 ;   <animation-charging>
 format-charging = <animation-charging> <label-charging>
 format-charging-background =
-format-charging-foreground = ${color.grad-3}
+format-charging-foreground = ${colors.grad-3}
 format-charging-padding = 2
 ; Available tokens:
 ;   %percentage% (default)
@@ -394,7 +394,7 @@ label-charging = "%percentage%% "
 ;   <animation-discharging>
 format-discharging = <ramp-capacity> <label-discharging>
 format-discharging-background =
-format-discharging-foreground = ${color.grad-3}
+format-discharging-foreground = ${colors.grad-3}
 format-discharging-padding = 2
 ; Available tokens:
 ;   %percentage% (default)
