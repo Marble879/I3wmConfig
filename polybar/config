@@ -16,6 +16,8 @@
 ;
 ;==========================================================
 
+; Modules adapted from https://github.com/prdanelli/dotfiles
+
 [colors]
 ;background = ${xrdb:color0:#222}
 background = #222
