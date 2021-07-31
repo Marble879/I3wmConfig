@@ -1,0 +1,3 @@
+configuration {
+}
+@import "/usr/share/rofi/themes/nord.rasi"
