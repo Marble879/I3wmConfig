@@ -68,7 +68,7 @@ font-0 = fixed:pixelsize=10;3
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = "FontAwesome:style=Regular:size=11;4"
 
-modules-left = i3 
+modules-left = i3 spotify 
 modules-center = date
 modules-right = pulseaudio-microphone brightness pulseaudio  wlan eth battery powermenu
 
@@ -431,6 +431,16 @@ format-prefix = " "
 format-foreground = ${colors.grad-6}
 
  
-  
+[module/spotify]
+type = custom/script
+interval = 1
+format-prefix = " "
+format = <label>
+exec = python3 ~/.config/polybar/scripts/spotify_status.py -f '{artist}: {song}'
+format-underline = #1db954
+;control players (optional)
+click-left = playerctl --player=spotify play-pause 
+click-right = playerctl --player=spotify next 
+click-middle = playerctl --player=spotify previous   
 
 
