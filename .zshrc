@@ -11,5 +11,6 @@ alias update="sudo pacman -Syu"
 alias aur="paru"
 alias a1="./connect_to_A1.sh"
 alias dev="./connect_to_devolo.sh"
+alias web="cd ~/Desktop/'Uni yr2'/'Web dev'/group-00-web"
 
 autoload -Uz compinit && compinit	
