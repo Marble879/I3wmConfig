@@ -1,3 +1,4 @@
 configuration {
 }
 @import "/usr/share/rofi/themes/nord.rasi"
+@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
