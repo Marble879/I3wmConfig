@@ -203,7 +203,9 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # Set wallpaper at startup
 #exec_always feh --bg-scale /home/younis/Pictures/wallpaper.png
-exec_always feh --bg-scale /home/younis/Pictures/49276.jpg
+#exec_always feh --bg-scale /home/younis/Pictures/49276.jpg
+exec_always feh --bg-scale /home/younis/Pictures/planet_rings_sky_space_97576_1920x1080.jpg
+#exec_always feh --bg-scale /home/younis/Pictures/external-content.duckduckgo.com.jpg
 
 # Set up dual monitors at startup 1
 #exec_always xrandr --output eDP-1 --primary --mode 1920x1080 --pos 1366x0 --rotate normal --output DP-1 --off --output HDMI-2 --off --output HDMI-2 --mode 1920x1080 --pos 0x156 --rotate normal
