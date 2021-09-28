@@ -232,8 +232,8 @@ bindsym XF86MonBrightnessUp exec light -A 5
 bindsym XF86MonBrightnessDown exec light -U 5
 
 for_window [class=".*"] border pixel 0 #*
-gaps inner 10
-gaps outer 1
+gaps inner 2
+#gaps outer 1
 
 smart_borders on
 smart_borders no_gaps
