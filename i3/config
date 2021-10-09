@@ -209,8 +209,9 @@ exec_always feh --bg-scale /home/younis/Pictures/planet_rings_sky_space_97576_19
 
 # Set up dual monitors at startup 1
 #exec_always xrandr --output eDP-1 --primary --mode 1920x1080 --pos 1366x0 --rotate normal --output DP-1 --off --output HDMI-2 --off --output HDMI-2 --mode 1920x1080 --pos 0x156 --rotate normal
-exec_always ~/.config/i3/single_monitor_large.sh
-
+#exec_always ~/.config/i3/single_monitor_large.sh
+#exec_always ~/.config/i3/monitor_below.sh
+exec_always ~/.config/i3/monitor_botttom_new.sh
 
 # keybind to move workspaces between monitors
 # i3 move a workspace to another monitor (multi monitor setup)
