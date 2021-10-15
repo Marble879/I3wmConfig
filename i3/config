@@ -254,7 +254,10 @@ client.placeholder $fg $fg $fg $fg $fg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Launch picom at startup
-exec_always --no-startup-id picom --experimental-backends
+# exec_always --no-startup-id picom --experimental-backends
+
+# Launch xcompmgr at startup
+#
 
 # Screenshots
 bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
