@@ -202,16 +202,18 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Set wallpaper at startup
-#exec_always feh --bg-scale /home/younis/Pictures/wallpaper.png
+exec_always feh --bg-scale /home/younis/Pictures/wallpaper.png
 #exec_always feh --bg-scale /home/younis/Pictures/49276.jpg
-exec_always feh --bg-scale /home/younis/Pictures/planet_rings_sky_space_97576_1920x1080.jpg
+#exec_always feh --bg-scale /home/younis/Pictures/planet_rings_sky_space_97576_1920x1080.jpg
 #exec_always feh --bg-scale /home/younis/Pictures/external-content.duckduckgo.com.jpg
+#exec_always feh --bg-scale /hom
 
 # Set up dual monitors at startup 1
 #exec_always xrandr --output eDP-1 --primary --mode 1920x1080 --pos 1366x0 --rotate normal --output DP-1 --off --output HDMI-2 --off --output HDMI-2 --mode 1920x1080 --pos 0x156 --rotate normal
 #exec_always ~/.config/i3/single_monitor_large.sh
-#exec_always ~/.config/i3/monitor_below.sh
-exec_always ~/.config/i3/monitor_botttom_new.sh
+exec_always ~/.config/i3/monitor_below.sh
+#exec_always ~/.config/i3/monitor_botttom_new.sh
+#exec_always ~/.config/i3/monitor_right.sh
 
 # keybind to move workspaces between monitors
 # i3 move a workspace to another monitor (multi monitor setup)
@@ -254,8 +256,9 @@ client.placeholder $fg $fg $fg $fg $fg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 #Launch picom at startup
-# exec_always --no-startup-id picom --experimental-backends
- exec_always --no-startup-id picom
+exec_always --no-startup-id picom --experimental-backends
+# exec_always --no-startup-id picom
+
 
 # Launch xcompmgr at startup
 

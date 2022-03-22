@@ -12,5 +12,7 @@ alias aur="paru"
 alias a1="./connect_to_A1.sh"
 alias dev="./connect_to_devolo.sh"
 alias web="cd ~/Desktop/'Uni yr2'/'Web dev'"
-
+alias dist="cd ~/Desktop/'Uni yr2'/'Distributed systems'/project"
+alias emb="cd ~/Desktop/'Uni yr2'/'Embedded systems'"
+alias cyb="cd ~/Desktop/'Uni yr2'/'Cyber physical systems'"
 autoload -Uz compinit && compinit	
