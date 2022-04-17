@@ -441,4 +441,3 @@ click-left = playerctl --player=spotify play-pause
 click-right = playerctl --player=spotify next 
 click-middle = playerctl --player=spotify previous   
 
-
