@@ -256,7 +256,7 @@ client.placeholder $fg $fg $fg $fg $fg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 #Launch picom at startup
-exec_always --no-startup-id picom --experimental-backends
+exec_always DRI_PRIME=1 picom --experimental-backends 
 # exec_always --no-startup-id picom
 
 
@@ -274,3 +274,5 @@ bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection c
 
 exec_always --no-startup-id /usr/bin/dunst
 exec_always --no-startup-id libinput-gestures-setup start
+
+#border_radius 4

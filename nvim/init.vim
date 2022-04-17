@@ -24,7 +24,6 @@ let g:vgit#enable_at_startup = 1
 let g:nerdTree#enable_at_startup = 1
 set number
 set tabstop=4
-set tw=4
 filetype plugin indent on
 " show existing tab with 4 spaces width
 set tabstop=4
@@ -34,12 +33,12 @@ set shiftwidth=4
 set expandtab
 set autoindent
 " c++ syntax highlighting
-let g:cpp_class_scope_highlight#enable_at_startup = 1
-let g:cpp_member_variable_highlight#enable_at_startup = 1
-let g:cpp_class_decl_highlight#enable_at_startup = 1
-let g:syntastic_cpp_checkers#enable_at_startup = ['cpplint']
-let g:syntastic_c_checkers#enable_at_startup = ['cpplint']
-let g:syntastic_cpp_cpplint_exec#enable_at_startup = 'cpplint'
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_decl_highlight = 1
+let g:syntastic_cpp_checkers = ['cpplint']
+let g:syntastic_c_checkers = ['cpplint']
+let g:syntastic_cpp_cpplint_exec= 'cpplint'
 " The following two lines are optional. Configure it to your liking!
-let g:syntastic_check_on_open#enable_at_startup = 1
-let g:syntastic_check_on_wq#enable_at_startup = 0
+let g:syntastic_check_on_open= 1
+let g:syntastic_check_on_wq= 0
