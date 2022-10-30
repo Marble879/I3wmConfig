@@ -1,0 +1,18 @@
+# powerprofilesctl required
+ if ! command_exists powerprofilesctl ; then
+   exit 1
+ fi
+
+# menu defined as an associative array
+typeset -A menu
+
+# Menu with keys/commands
+
+ menu=(
+   [Performance]="powerprofilesctl set performance"
+   [ Balanced]="powerprofilesctl set balanced"
+   [ Power Saver]="powerprofilesctl set power-saver"
+   [ Cancel]=""
+)
+
+menu_nrows=${#menu[@]}
